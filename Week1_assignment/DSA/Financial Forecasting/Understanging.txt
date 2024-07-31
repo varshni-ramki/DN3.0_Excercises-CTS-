@@ -1,0 +1,23 @@
+Understand Recursive Algorithms
+Concept of Recursion
+Recursion is a method where the solution to a problem depends on solutions to smaller instances of the same problem. It involves a function calling itself with a base case to stop the recursion. Recursion can simplify the implementation of certain problems, such as tree traversal, searching, and mathematical computations (e.g., factorial, Fibonacci sequence).
+
+Advantages of Recursion
+Simplifies complex problems by breaking them down into smaller, more manageable sub-problems.
+Often provides a cleaner and more intuitive solution compared to iterative methods.
+Disadvantages of Recursion
+Can lead to excessive memory usage due to the call stack.
+May result in slower performance for certain problems due to redundant calculations.
+Step 2: Setup
+Method to Calculate Future Value Using a Recursive Approach
+Let's assume we want to predict the future value based on a constant growth rate. The future value can be calculated using the formula:
+Future Value = Present Value × (1+Growth Rate)^n
+Future Value=Present Value×(1+Growth Rate) ^n
+ 
+where ,
+n is the number of periods.
+
+Analysis of Optimization
+Memoization: This approach stores the results of expensive function calls and reuses the stored results when the same inputs occur again. It reduces the number of redundant calculations and improves efficiency but uses additional memory.
+Iterative: This approach eliminates the overhead of recursive calls and avoids potential stack overflow issues. It is generally more efficient in terms of both time and space.
+By optimizing the recursive solution using memoization or switching to an iterative approach, we can achieve better performance and scalability for predicting future values in financial forecasting.
