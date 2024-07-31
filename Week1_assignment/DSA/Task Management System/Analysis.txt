@@ -1,0 +1,34 @@
+Understand Linked Lists
+Singly Linked List
+A singly linked list is a type of linked list where each node contains data and a reference (or pointer) to the next node in the sequence. The list starts from the head node and traverses to the end (where the next reference is null). It allows for efficient insertion and deletion of nodes at the beginning of the list but requires traversal for operations in the middle or end of the list.
+
+Doubly Linked List
+A doubly linked list is similar to a singly linked list, but each node contains two references: one to the next node and one to the previous node. This allows for traversal in both directions (forward and backward), making insertion and deletion of nodes more flexible, especially in the middle of the list.
+
+ Analysis
+Time Complexity
+Add Task:
+
+Best Case: O(1) (if adding to the beginning, which is not done in this implementation)
+Average Case: O(n) (traversing to the end of the list)
+Worst Case: O(n) (traversing to the end of the list)
+Search Task:
+
+Best Case: O(1) (if the task is at the head)
+Average Case: O(n) (traversing half the list on average)
+Worst Case: O(n) (traversing the entire list)
+Traverse Tasks:
+
+Best Case: O(n) (traversing all nodes)
+Average Case: O(n) (traversing all nodes)
+Worst Case: O(n) (traversing all nodes)
+Delete Task:
+
+Best Case: O(1) (if the task is at the head)
+Average Case: O(n) (traversing half the list on average)
+Worst Case: O(n) (traversing the entire list)
+Advantages of Linked Lists Over Arrays for Dynamic Data
+Dynamic Size: Linked lists can easily grow and shrink in size by adding or removing nodes. Arrays have a fixed size and require resizing operations that are costly.
+Efficient Insertions/Deletions: Insertions and deletions in linked lists are more efficient as they involve changing references (pointers) rather than shifting elements, which is necessary in arrays.
+Memory Usage: Linked lists use memory dynamically, allocating space only when needed, whereas arrays may waste memory if the allocated size is larger than needed.
+However, linked lists also have disadvantages, such as higher memory usage per element (due to storing pointers) and slower access times compared to arrays, where direct indexing is possible.
