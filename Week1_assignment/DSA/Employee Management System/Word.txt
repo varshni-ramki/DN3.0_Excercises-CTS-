@@ -1,0 +1,39 @@
+Understand Array Representation
+Explanation
+Arrays are a collection of elements stored in contiguous memory locations. Each element can be accessed using an index. The advantages of arrays include:
+
+Fast Access: Direct access to elements via index in constant time 
+𝑂
+(
+1
+)
+O(1).
+Fixed Size: Memory is allocated at the time of array creation, ensuring that the size is constant.
+Advantages
+Efficiency: Accessing elements by index is very efficient, providing constant time access.
+Contiguity: Since the elements are stored in contiguous memory locations, it helps in caching and thus improves performance.
+Ease of Use: Simple to use and manage small datasets.
+
+Analysis
+Time Complexity
+Add Operation: 
+𝑂
+(
+1
+)
+O(1) - Adding an employee at the end of the array.
+Search Operation: 
+𝑂(𝑛)
+O(n) - Searching for an employee involves traversing the array.
+Traverse Operation: 
+𝑂(𝑛)
+O(n) - Traversing involves iterating through all elements.
+Delete Operation:  𝑂(𝑛)
+O(n) - Deletion involves searching for the element and shifting subsequent elements.
+Limitations of Arrays
+Fixed Size: The size of the array must be known at the time of creation, which limits flexibility.
+Inefficient Deletion: Deleting an element requires shifting all subsequent elements, which is inefficient.
+Memory Wastage: If the array is not fully utilized, memory is wasted.
+When to Use Arrays
+Small Data Sets: When managing a relatively small and fixed number of elements.
+Performance: When constant time access to elements is required.
